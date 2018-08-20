@@ -11,7 +11,7 @@ body {
 .logo {
     font-family: 'Space Mono', monospace;
     font-weight: 600;
-    font-size: 23px;
+    font-size: 32px;
 
     vertical-align: top;
     margin-left: 5px;
@@ -54,7 +54,7 @@ form {
     height: 100vh;
     color: #828282;
     text-align: center;
-    padding: 140px 100px;
+    padding: 140px 0px;
 }
 
 .next-on {
