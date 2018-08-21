@@ -63,7 +63,7 @@ form {
 }
 
 .date {
-    
+
     font-size: 65px;
     font-weight: 900;
     color: #FFA000;
@@ -73,6 +73,12 @@ form {
     .main-content {
         padding: 30px;
         text-align: center;
+    }
+    .logo{
+        margin-left: 0px;
+    }
+    #email {
+        width: 100%
     }
     .head{
         text-align: left;
