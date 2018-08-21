@@ -73,4 +73,12 @@ form {
         padding: 30px;
         text-align: center;
     }
+    .head{
+        text-align: left;
+        font-size: 40px;
+
+    }
+    .content{
+        text-align: left;
+    }
 }
