@@ -18,7 +18,7 @@ body{
     margin: 30px;
     border-radius: 8px;
     box-shadow: 0px 0px 50px 0px #000;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .site-wrap-dot{
@@ -209,4 +209,155 @@ input[type="submit"]:hover{
 
 .slack{
     background: url("slack.svg");
+}
+
+@media only screen and (max-width: 780px) {
+    .site-wrap{
+        background: radial-gradient(circle at top left, #444 5%, #222); 
+        height: 96vh;
+        width: 98vw;
+        margin: 10px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 50px 0px #000;
+        overflow-x: hidden;
+    }
+
+    .content-wrap{
+        top: 4%;
+        bottom: 0;
+        position: absolute;
+        height: 92vh;
+        width: 95vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.8fr 1fr;
+        z-index: 5;
+        padding: 15px;
+        grid-gap: 15px;
+        box-sizing: border-box;
+    }
+    
+    .branding{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    
+    .logo{
+        width: 30px;
+        height: 30px;
+        background: url("bosc_logo.svg");
+    }
+    .logotype{
+        margin-left: 15px;
+        font-size: 16px;
+    }
+    .logotype>b{
+        font-size: 25px;
+    }
+    .logo_desc{
+        display: none;
+        text-align: left;
+        opacity: 0.6;
+        font-size: 18px;
+        padding-top: 10px;
+    }
+    .content>h1{
+        font-size: 25px;
+        width: 100%;
+        margin-top: 40px;
+    }
+    .content>p{
+        font-size: 12px;
+        opacity: 0.7;
+        width: 100%;
+    }
+    .tab02{
+        background: whitesmoke;
+        border-radius: 5px;
+        box-shadow: 5px 5px 15px 0px #111;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+    }
+    .tab02::before{
+        content: '';
+        background: linear-gradient(63deg, #eee 23%, transparent 23%) 7px 0, 
+        linear-gradient(63deg, transparent 74%, #eee 78%), 
+        linear-gradient(63deg, transparent 34%, #eee 38%, #eee 58%, transparent 62%), 
+        rgb(228, 228, 228);
+        background-size: 16px 48px;
+        position: absolute;
+        animation: slide 40s linear infinite;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+    }
+    .nxt{
+        font-size: 20px;
+        z-index: 100;
+    }
+    .date{
+        font-size: 25px;
+        font-weight: 700;
+        z-index: 100;
+    }
+    .venue{
+        font-size: 16px;
+        text-align: center;
+        z-index: 100;
+    }
+    
+    input{
+        font-family: 'Ubuntu Mono', monospace;
+        font-size: 14px;
+        padding: 10px 15px;
+        border-radius: 3px;
+        border: 0;
+        outline: 0;
+    }
+    input[type="email"]{
+        width: 55%;
+    }
+    input[type="email"]:hover{
+        box-shadow: 5px 5px 15px 0px #111;
+    }
+    input[type="submit"]{
+        background: #111;
+        color: whitesmoke;
+        transition: all 0.3s ease-out;
+    }
+    input[type="submit"]:hover{
+        transform: translateY(-5px);
+    }
+    
+    .links{
+        display: flex;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .link01{
+        padding: 10px 15px;
+        border-bottom: 3px solid whitesmoke;
+        margin-right: 20px;
+        display: flex;
+        transition: all 0.3s ease-out;
+        cursor: pointer;
+    }
+    
+    .link01:hover{
+        padding: 10px 30px;
+    }
+    
+    .logox{
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+    }
 }
