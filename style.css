@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     font-family: 'Montserrat', sans-serif;
     color: #2E2E2E;
@@ -43,11 +44,93 @@ body {
     font-size: 45px;
     margin: 0px;
     margin-bottom: 20px;
+=======
+body{
+    background: #222;
+    margin: 0;
+    max-width: 100vw;
+    max-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: 'Ubuntu Mono', monospace;
 }
 
-.content {
+.site-wrap{
+    background: radial-gradient(circle at top left, #444 5%, #222); 
+    height: 92vh;
+    width: 95vw;
+    margin: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 50px 0px #000;
+    overflow-x: hidden;
+}
+
+.site-wrap-dot{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background:
+    radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#282828;
+    background-size:16px 16px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    animation: Gradient 60s linear infinite;
+    z-index: 1;
+}
+
+
+.content-wrap{
+    top: 4%;
+    bottom: 0;
+    position: absolute;
+    height: 92vh;
+    width: 95vw;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    z-index: 5;
+    padding: 30px;
+    grid-gap: 30px;
+    box-sizing: border-box;
+}
+
+.tab01{
+    color: whitesmoke;
+}
+.branding{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wrap01{
+    display: flex;
+    align-items: center;
+}
+
+.tab01{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+>>>>>>> d5c9c0f84d0a6b8975ce2755be01de602e92c1f3
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+    background: url("bosc_logo.svg");
+}
+.logotype{
+    margin-left: 15px;
     font-size: 20px;
 }
+<<<<<<< HEAD
 
 #email {
     padding: 10px;
@@ -106,12 +189,287 @@ button {
    
     color: #FF9900;
     
+=======
+.logotype>b{
+    font-size: 30px;
+}
+.logo_desc{
+    text-align: right;
+    opacity: 0.6;
+    font-size: 18px;
+    padding-top: 10px;
+}
+.content>h1{
+    font-size: 40px;
+    width: 80%;
+}
+.content>p{
+    font-size: 20px;
+    opacity: 0.7;
+    width: 80%;
+}
+.tab02{
+    background: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 0px #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.tab02::before{
+    content: '';
+    background: linear-gradient(63deg, #eee 23%, transparent 23%) 7px 0, 
+    linear-gradient(63deg, transparent 74%, #eee 78%), 
+    linear-gradient(63deg, transparent 34%, #eee 38%, #eee 58%, transparent 62%), 
+    rgb(228, 228, 228);
+    background-size: 16px 48px;
+    position: absolute;
+    animation: slide 40s linear infinite;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+.nxt{
+    font-size: 40px;
+    z-index: 100;
+}
+.date{
+    font-size: 60px;
+    font-weight: 700;
+    z-index: 100;
+}
+.venue{
+    font-size: 25px;
+    text-align: center;
+    z-index: 100;
 }
 
-@media only screen and (max-width: 700px) {
-    .main-content {
-        padding: 30px;
+input{
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 3px;
+    border: 0;
+    outline: 0;
+}
+input[type="email"]{
+    width: 50%;
+}
+input[type="email"]:hover{
+    box-shadow: 5px 5px 15px 0px #111;
+}
+input[type="submit"]{
+    background: #111;
+    color: whitesmoke;
+    transition: all 0.3s ease-out;
+}
+input[type="submit"]:hover{
+    transform: translateY(-5px);
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 0%;
+    }
+	100% {
+		background-position: 100% 100%;
+	}
+}
+@-webkit-keyframes slide {
+	0% {
+		background-position: 0% 0%;
+    }
+	100% {
+		background-position: 100% 0%;
+	}
+}
+
+.links{
+    display: flex;
+    font-size: 20px;
+}
+.link01{
+    padding: 10px 15px;
+    border-bottom: 3px solid whitesmoke;
+    margin-right: 20px;
+    display: flex;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+
+
+.link01:hover{
+    padding: 10px 30px;
+
+}
+
+.logox{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.github{
+    background: url("github.svg");
+}
+
+.slack{
+    background: url("slack.svg");
+>>>>>>> d5c9c0f84d0a6b8975ce2755be01de602e92c1f3
+}
+
+@media only screen and (max-width: 780px) {
+    .site-wrap{
+        background: radial-gradient(circle at top left, #444 5%, #222); 
+        height: 96vh;
+        width: 98vw;
+        margin: 10px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 50px 0px #000;
+        overflow-x: hidden;
+    }
+
+    .content-wrap{
+        top: 4%;
+        bottom: 0;
+        position: absolute;
+        height: 92vh;
+        width: 95vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.8fr 1fr;
+        z-index: 5;
+        padding: 15px;
+        grid-gap: 15px;
+        box-sizing: border-box;
+    }
+    
+    .branding{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    
+    .logo{
+        width: 30px;
+        height: 30px;
+        background: url("bosc_logo.svg");
+    }
+    .logotype{
+        margin-left: 15px;
+        font-size: 16px;
+    }
+    .logotype>b{
+        font-size: 25px;
+    }
+    .logo_desc{
+        display: none;
+        text-align: left;
+        opacity: 0.6;
+        font-size: 18px;
+        padding-top: 10px;
+    }
+    .content>h1{
+        font-size: 25px;
+        width: 100%;
+        margin-top: 40px;
+    }
+    .content>p{
+        font-size: 12px;
+        opacity: 0.7;
+        width: 100%;
+    }
+    .tab02{
+        background: whitesmoke;
+        border-radius: 5px;
+        box-shadow: 5px 5px 15px 0px #111;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+    }
+    .tab02::before{
+        content: '';
+        background: linear-gradient(63deg, #eee 23%, transparent 23%) 7px 0, 
+        linear-gradient(63deg, transparent 74%, #eee 78%), 
+        linear-gradient(63deg, transparent 34%, #eee 38%, #eee 58%, transparent 62%), 
+        rgb(228, 228, 228);
+        background-size: 16px 48px;
+        position: absolute;
+        animation: slide 40s linear infinite;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+    }
+    .nxt{
+        font-size: 20px;
+        z-index: 100;
+    }
+    .date{
+        font-size: 25px;
+        font-weight: 700;
+        z-index: 100;
+    }
+    .venue{
+        font-size: 16px;
         text-align: center;
+        z-index: 100;
+    }
+    
+    input{
+        font-family: 'Ubuntu Mono', monospace;
+        font-size: 14px;
+        padding: 10px 15px;
+        border-radius: 3px;
+        border: 0;
+        outline: 0;
+    }
+    input[type="email"]{
+        width: 55%;
+    }
+    input[type="email"]:hover{
+        box-shadow: 5px 5px 15px 0px #111;
+    }
+    input[type="submit"]{
+        background: #111;
+        color: whitesmoke;
+        transition: all 0.3s ease-out;
+    }
+    input[type="submit"]:hover{
+        transform: translateY(-5px);
+    }
+    
+    .links{
+        display: flex;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    .link01{
+        padding: 10px 15px;
+        border-bottom: 3px solid whitesmoke;
+        margin-right: 20px;
+        display: flex;
+        transition: all 0.3s ease-out;
+        cursor: pointer;
+    }
+    
+    .link01:hover{
+        padding: 10px 30px;
+    }
+    
+    .logox{
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
     }
     .logo {
         margin-left: 0px;
