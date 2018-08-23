@@ -194,8 +194,10 @@ input[type="submit"]:hover{
     cursor: pointer;
 }
 
+
 .link01:hover{
     padding: 10px 30px;
+
 }
 
 .logox{
@@ -359,5 +361,19 @@ input[type="submit"]:hover{
         width: 15px;
         height: 15px;
         margin-right: 10px;
+    }
+    .logo{
+        margin-left: 0px;
+    }
+    #email {
+        width: 100%
+    }
+    .head{
+        text-align: left;
+        font-size: 40px;
+
+    }
+    .content{
+        text-align: left;
     }
 }
