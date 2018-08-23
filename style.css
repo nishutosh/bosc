@@ -113,10 +113,6 @@ body{
 }
 .tab02::before{
     content: '';
-    background: linear-gradient(63deg, #eee 23%, transparent 23%) 7px 0, 
-    linear-gradient(63deg, transparent 74%, #eee 78%), 
-    linear-gradient(63deg, transparent 34%, #eee 38%, #eee 58%, transparent 62%), 
-    rgb(228, 228, 228);
     background-size: 16px 48px;
     position: absolute;
     animation: slide 40s linear infinite;
@@ -294,10 +290,7 @@ a{
     }
     .tab02::before{
         content: '';
-        background: linear-gradient(63deg, #eee 23%, transparent 23%) 7px 0, 
-        linear-gradient(63deg, transparent 74%, #eee 78%), 
-        linear-gradient(63deg, transparent 34%, #eee 38%, #eee 58%, transparent 62%), 
-        rgb(228, 228, 228);
+       
         background-size: 16px 48px;
         position: absolute;
         animation: slide 40s linear infinite;
@@ -370,18 +363,6 @@ a{
     }
     .logo {
         margin-left: 0px;
-    }
-
-    #email {
-        width: 100%
-    }
-    .head{
-        text-align: left;
-        font-size: 40px;
-
-    }
-    .content{
-        text-align: left;
     }
 }
 
