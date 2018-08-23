@@ -212,6 +212,10 @@ input[type="submit"]:hover{
 .slack{
     background: url("slack.svg");
 }
+a{
+    color:whitesmoke;
+    text-decoration:none;
+}
 
 @media only screen and (max-width: 780px) {
     .site-wrap{
@@ -364,9 +368,10 @@ input[type="submit"]:hover{
         height: 15px;
         margin-right: 10px;
     }
-    .logo{
+    .logo {
         margin-left: 0px;
     }
+
     #email {
         width: 100%
     }
@@ -379,3 +384,8 @@ input[type="submit"]:hover{
         text-align: left;
     }
 }
+
+    
+    
+
+
