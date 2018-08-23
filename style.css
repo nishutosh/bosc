@@ -238,13 +238,15 @@ input[type="submit"]:hover{
         grid-gap: 15px;
         box-sizing: border-box;
     }
+	
     
     .branding{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
-    
+    .site-wrap-dot{
+	animation: None 60s linear infinite;}
     
     .logo{
         width: 30px;
