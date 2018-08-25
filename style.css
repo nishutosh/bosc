@@ -1,4 +1,4 @@
-body{
+body {
     background: #222;
     margin: 0;
     max-width: 100vw;
@@ -11,8 +11,8 @@ body{
     font-family: 'Ubuntu Mono', monospace;
 }
 
-.site-wrap{
-    background: radial-gradient(circle at top left, #444 5%, #222); 
+.site-wrap {
+    background: radial-gradient(circle at top left, #444 5%, #222);
     height: 92vh;
     width: 95vw;
     margin: 30px;
@@ -21,17 +21,16 @@ body{
     overflow-x: hidden;
 }
 
-.site-wrap-dot{
+.site-wrap-dot {
     top: 0;
     left: 0;
     bottom: 0;
-    background:
-    radial-gradient(black 15%, transparent 16%) 0 0,
+    background: radial-gradient(black 15%, transparent 16%) 0 0,
     radial-gradient(black 15%, transparent 16%) 8px 8px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-    background-color:#282828;
-    background-size:16px 16px;
+    radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
+    background-color: #282828;
+    background-size: 16px 16px;
     width: 100%;
     height: 100%;
     opacity: 0.3;
@@ -40,7 +39,7 @@ body{
 }
 
 
-.content-wrap{
+.content-wrap {
     top: 4%;
     bottom: 0;
     position: absolute;
@@ -54,53 +53,61 @@ body{
     box-sizing: border-box;
 }
 
-.tab01{
+.tab01 {
     color: whitesmoke;
 }
-.branding{
+
+.branding {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.wrap01{
+
+.wrap01 {
     display: flex;
     align-items: center;
 }
 
-.tab01{
+.tab01 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.logo{
+.logo {
     width: 40px;
     height: 40px;
     background: url("bosc_logo.svg");
 }
-.logotype{
+
+.logotype {
     margin-left: 15px;
     font-size: 20px;
 }
-.logotype>b{
+
+.logotype>b {
     font-size: 30px;
 }
-.logo_desc{
+
+.logo_desc {
     text-align: right;
     opacity: 0.6;
     font-size: 18px;
     padding-top: 10px;
 }
-.content>h1{
+
+.content>h1 {
     font-size: 40px;
     width: 80%;
 }
-.content>p{
+
+.content>p {
     font-size: 20px;
     opacity: 0.7;
     width: 80%;
 }
-.tab02{
+
+.tab02 {
     background: whitesmoke;
     border-radius: 5px;
     box-shadow: 5px 5px 15px 0px #111;
@@ -111,7 +118,8 @@ body{
     position: relative;
     overflow: hidden;
 }
-.tab02::before{
+
+.tab02::before {
     content: '';
     background-size: 16px 48px;
     position: absolute;
@@ -122,22 +130,25 @@ body{
     bottom: 0;
     z-index: 2;
 }
-.nxt{
+
+.nxt {
     font-size: 40px;
     z-index: 100;
 }
-.date{
+
+.date {
     font-size: 60px;
     font-weight: 700;
     z-index: 100;
 }
-.venue{
+
+.venue {
     font-size: 25px;
     text-align: center;
     z-index: 100;
 }
 
-input{
+input {
     font-family: 'Ubuntu Mono', monospace;
     font-size: 20px;
     padding: 10px 15px;
@@ -145,43 +156,61 @@ input{
     border: 0;
     outline: 0;
 }
-input[type="email"]{
+
+input[type="email"] {
     width: 50%;
 }
-input[type="email"]:hover{
+
+input[type="email"]:hover {
     box-shadow: 5px 5px 15px 0px #111;
 }
-input[type="submit"]{
+
+input[type="submit"] {
     background: #111;
     color: whitesmoke;
     transition: all 0.3s ease-out;
 }
-input[type="submit"]:hover{
+
+.joinus-button {
+    background: #111;
+    color: whitesmoke;
+    border: 0px solid;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 24px;
+    padding: 10px 15px;
+    width: 300px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+input[type="submit"]:hover {
     transform: translateY(-5px);
 }
 
 @-webkit-keyframes Gradient {
-	0% {
-		background-position: 0% 0%;
+    0% {
+        background-position: 0% 0%;
     }
-	100% {
-		background-position: 100% 100%;
-	}
-}
-@-webkit-keyframes slide {
-	0% {
-		background-position: 0% 0%;
+    100% {
+        background-position: 100% 100%;
     }
-	100% {
-		background-position: 100% 0%;
-	}
 }
 
-.links{
+@-webkit-keyframes slide {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+.links {
     display: flex;
     font-size: 20px;
 }
-.link01{
+
+.link01 {
     padding: 10px 15px;
     border-bottom: 3px solid whitesmoke;
     margin-right: 20px;
@@ -191,31 +220,32 @@ input[type="submit"]:hover{
 }
 
 
-.link01:hover{
+.link01:hover {
     padding: 10px 30px;
-
 }
 
-.logox{
+.logox {
     width: 20px;
     height: 20px;
     margin-right: 10px;
 }
-.github{
+
+.github {
     background: url("github.svg");
 }
 
-.slack{
+.slack {
     background: url("slack.svg");
 }
-a{
-    color:whitesmoke;
-    text-decoration:none;
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 780px) {
-    .site-wrap{
-        background: radial-gradient(circle at top left, #444 5%, #222); 
+    .site-wrap {
+        background: radial-gradient(circle at top left, #444 5%, #222);
         height: 96vh;
         width: 98vw;
         margin: 10px;
@@ -224,7 +254,7 @@ a{
         overflow-x: hidden;
     }
 
-    .content-wrap{
+    .content-wrap {
         top: 4%;
         bottom: 0;
         position: absolute;
@@ -238,46 +268,47 @@ a{
         grid-gap: 15px;
         box-sizing: border-box;
     }
-	
-    
-    .branding{
+
+
+    .branding {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
-    .site-wrap-dot{
-	animation: None 60s linear infinite;}
-    
-    .logo{
+    .site-wrap-dot {
+        animation: None 60s linear infinite;
+    }
+
+    .logo {
         width: 30px;
         height: 30px;
         background: url("bosc_logo.svg");
     }
-    .logotype{
+    .logotype {
         margin-left: 15px;
         font-size: 16px;
     }
-    .logotype>b{
+    .logotype>b {
         font-size: 25px;
     }
-    .logo_desc{
+    .logo_desc {
         display: none;
         text-align: left;
         opacity: 0.6;
         font-size: 18px;
         padding-top: 10px;
     }
-    .content>h1{
+    .content>h1 {
         font-size: 25px;
         width: 100%;
         margin-top: 40px;
     }
-    .content>p{
+    .content>p {
         font-size: 12px;
         opacity: 0.7;
         width: 100%;
     }
-    .tab02{
+    .tab02 {
         background: whitesmoke;
         border-radius: 5px;
         box-shadow: 5px 5px 15px 0px #111;
@@ -288,9 +319,9 @@ a{
         position: relative;
         overflow: hidden;
     }
-    .tab02::before{
+    .tab02::before {
         content: '';
-       
+
         background-size: 16px 48px;
         position: absolute;
         animation: slide 40s linear infinite;
@@ -300,22 +331,22 @@ a{
         bottom: 0;
         z-index: 2;
     }
-    .nxt{
+    .nxt {
         font-size: 20px;
         z-index: 100;
     }
-    .date{
+    .date {
         font-size: 25px;
         font-weight: 700;
         z-index: 100;
     }
-    .venue{
+    .venue {
         font-size: 16px;
         text-align: center;
         z-index: 100;
     }
-    
-    input{
+
+    input {
         font-family: 'Ubuntu Mono', monospace;
         font-size: 14px;
         padding: 10px 15px;
@@ -323,27 +354,27 @@ a{
         border: 0;
         outline: 0;
     }
-    input[type="email"]{
+    input[type="email"] {
         width: 55%;
     }
-    input[type="email"]:hover{
+    input[type="email"]:hover {
         box-shadow: 5px 5px 15px 0px #111;
     }
-    input[type="submit"]{
+    input[type="submit"] {
         background: #111;
         color: whitesmoke;
         transition: all 0.3s ease-out;
     }
-    input[type="submit"]:hover{
+    input[type="submit"]:hover {
         transform: translateY(-5px);
     }
-    
-    .links{
+
+    .links {
         display: flex;
         font-size: 14px;
         margin-top: 10px;
     }
-    .link01{
+    .link01 {
         padding: 10px 15px;
         border-bottom: 3px solid whitesmoke;
         margin-right: 20px;
@@ -351,12 +382,12 @@ a{
         transition: all 0.3s ease-out;
         cursor: pointer;
     }
-    
-    .link01:hover{
+
+    .link01:hover {
         padding: 10px 30px;
     }
-    
-    .logox{
+
+    .logox {
         width: 15px;
         height: 15px;
         margin-right: 10px;
@@ -364,9 +395,8 @@ a{
     .logo {
         margin-left: 0px;
     }
+    .joinus-button {
+        width: 90%;
+        margin: auto;
+    }
 }
-
-    
-    
-
-
