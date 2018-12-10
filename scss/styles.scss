@@ -2,80 +2,128 @@ body {
     font-family: Montserrat;
 
 }
-.row{
-	padding: 30px 50px;
+
+.row {
+    padding: 30px 50px;
 }
 
 
 .main {
-	  
+
 
     background-image: url("../images/background.jpg");
     height: 100vh;
     background-size: 100%;
     color: white;
 
-  
+
 
     .logo {
         font-size: 17px;
-        margin:10px 0px;
+        margin: 10px 0px;
         display: inline-block;
     }
 
     .head-main {
-    	font-size: 48px;
-    	font-weight: 700;
-    	margin-top: 50px;
-    	margin-bottom: 0px;
+        font-size: 48px;
+        font-weight: 700;
+        margin-top: 50px;
+        margin-bottom: 0px;
     }
-    .head-sup{
-    	font-size: 19px;
-    	margin:20px 0px;
+
+    .head-sup {
+        font-size: 19px;
+        margin: 20px 0px;
     }
-    .join{
-    	border:0px solid;
-    	background-color: white;
-    	padding: 10px 20px;
-    	text-align: center;
+
+    .join {
+        border: 0px solid;
+        background-color: white;
+        padding: 10px 20px;
+        text-align: center;
         border-radius: 5px;
-    	font-size: 24px;
-    	color:#C20052;
-    	width: 300px;
-    	margin-top: 10px;
-    	font-weight: 600;
-    	
-    }
-    .join:hover{
-   box-shadow: 0px 0px 17px #fbfbfb;
-    }
-    .logo_svg{
-    	height:14px;
-    	width:14px;
-    	background:url('../images/bosc_logo.svg');
-    	display:inline-block;
-    	margin-right: 5px;
+        font-size: 24px;
+        color: #C20052;
+        width: 300px;
+        margin-top: 10px;
+        font-weight: 600;
 
     }
-    .menu{
-    	display: inline-block;
-    	list-style: none;
-    	float: right;
-     .menu-items{
-     	display: inline-block;
-     	margin: 10px;
-     	font-size: 17px;
-     	cursor: pointer;
-     }
+
+    .join:hover {
+        box-shadow: 0px 0px 17px #fbfbfb;
     }
-    .dnd{
-    	float: right;
-    	opacity: 0.6;
-    	font-size: 14px;
-    	font-family: 'Roboto Mono';
-    	margin-top: 40px;
-    	p{
-    		margin:5px; 
-    	}
+
+    .logo_svg {
+        height: 14px;
+        width: 14px;
+        background: url('../images/bosc_logo.svg');
+        display: inline-block;
+        margin-right: 5px;
+
     }
+
+    .menu {
+        display: inline-block;
+        list-style: none;
+        float: right;
+
+        .menu-items {
+            display: inline-block;
+            margin: 10px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+    }
+
+    .dnd {
+        float: right;
+        opacity: 0.6;
+        font-size: 14px;
+        font-family: 'Roboto Mono';
+        margin-top: 40px;
+
+        p {
+            margin: 5px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .row{
+        padding: 30px 40px;
+    }
+    .main {
+        background-size: auto;
+        height: auto;
+
+        .logo {
+            display: block;
+            text-align: center;
+        }
+
+        .menu {
+            margin: auto;
+            text-align: center;
+            float: none;
+            display: block;
+            padding: 0px;
+        }
+
+        .head-main {
+            font-size: 35px;
+
+            margin-top: 30px;
+
+        }
+        .dnd{
+            float: none;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+
+
+    }
+
 }
