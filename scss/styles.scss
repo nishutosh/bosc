@@ -96,8 +96,10 @@ body {
     .main {
         background-size: auto;
         height: auto;
+        min-height: 100vh;
 
         .logo {
+            font-size: 16px;
             display: block;
             text-align: center;
         }
@@ -109,12 +111,18 @@ body {
             display: block;
             padding: 0px;
         }
+        .join{
+            width: auto;
+        }
 
         .head-main {
-            font-size: 35px;
+            font-size: 31px;
 
             margin-top: 30px;
 
+        }
+        .head-sup{
+            font-size: 16px;
         }
         .dnd{
             float: none;
