@@ -1,5 +1,6 @@
 body {
     font-family: Montserrat;
+    background-color: whitesmoke;
 
 }
 
@@ -11,52 +12,62 @@ body {
 .main {
 
 
+
     background-image: url("../images/background.jpg");
-    height: 100vh;
+    height: 120vh;
+    background-attachment: fixed;
     background-size: 100%;
     color: white;
 
 
+    .center {
+        text-align: center;
+    }
 
     .logo {
         font-size: 17px;
         margin: 10px 0px;
         display: inline-block;
+        font-family: 'Quicksand', sans-serif;
+
     }
 
     .head-main {
-        font-size: 48px;
+        text-align: center;
+        font-size: 43px;
         font-weight: 700;
         margin-top: 50px;
         margin-bottom: 0px;
     }
 
     .head-sup {
+        text-align: center;
         font-size: 19px;
-        margin: 20px 0px;
+        margin: 15px 0px;
     }
 
     .join {
         border: 0px solid;
-        background-color: white;
+
+        background-color: turquoise;
         padding: 10px 20px;
         text-align: center;
         border-radius: 5px;
         font-size: 24px;
-        color: #C20052;
+        color: white;
         width: 300px;
         margin-top: 10px;
         font-weight: 600;
+        
+
 
     }
 
-    .join:hover {
-        box-shadow: 0px 0px 17px #fbfbfb;
-    }
+    .join:hover {}
 
     .logo_svg {
-        height: 14px;
-        width: 14px;
+        height: 13px;
+        width: 13px;
         background: url('../images/bosc_logo.svg');
         display: inline-block;
         margin-right: 5px;
@@ -76,12 +87,125 @@ body {
         }
     }
 
+    
+}
+
+.schedule {
+    background-color: transparent;
+    height: 60vh;
+
+    .sch_box {
+        margin-top: -310px;
+        background-color: white;
+        border-radius: 20px;
+        padding: 20px 30px;
+        box-shadow: 0px 0px 15px #c3c3c3;
+
+
+        .sch_head {
+            font-size: 43px;
+            text-align: center;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .calendar {
+            width: 50%;
+            display: inline-block;
+
+            .month {
+                padding: 20px 0px;
+                width: 100%;
+                font-size: 25px;
+                font-weight: 700;
+                text-align: center;
+                color: black;
+            }
+
+            .month ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+            .month ul li {
+                color: #333;
+                font-size: 20px;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+            }
+
+            .weekdays {
+                margin: 0;
+                padding: 20px 0;
+
+                width: 100%;
+                font-size: 18px;
+
+            }
+
+            .weekdays li {
+                display: inline-block;
+                font-size: 18px;
+                width: 13.2%;
+                color: #bbb;
+                text-align: center;
+            }
+
+            .days {
+                padding: 20px 0;
+                padding-top: 0px;
+                margin: 0;
+                width: 100%;
+                font-size: 18px;
+            }
+
+            .days li {
+                list-style-type: none;
+                display: inline-block;
+                width: 13.2%;
+                text-align: center;
+                margin: 10px 0px;
+
+                color: #777;
+            }
+
+            .days li .active {
+
+                padding: 8px 10px;
+                border-radius: 100%;
+                background: turquoise;
+
+
+                color: white !important
+            }
+
+
+        }
+        .points{
+            width: 49%;
+            vertical-align: top;
+            margin: 5px 0px;
+            display: inline-block;
+            .points_list{
+                
+                list-style: none;
+                padding: 0px;
+                li{
+                    margin: 30px 20px;
+                    font-size: 23px;
+                }
+            }
+        }
+
+    }
     .dnd {
-        float: right;
-        opacity: 0.6;
-        font-size: 14px;
-        font-family: 'Roboto Mono';
-        margin-top: 40px;
+       
+      
+        color: #a5a5a5;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 50px;
 
         p {
             margin: 5px;
@@ -90,9 +214,10 @@ body {
 }
 
 @media only screen and (max-width: 1000px) {
-    .row{
+    .row {
         padding: 30px 40px;
     }
+
     .main {
         background-size: auto;
         height: auto;
@@ -111,8 +236,9 @@ body {
             display: block;
             padding: 0px;
         }
-        .join{
-            width:100%;
+
+        .join {
+            width: 100%;
         }
 
         .head-main {
@@ -121,10 +247,12 @@ body {
             margin-top: 30px;
 
         }
-        .head-sup{
+
+        .head-sup {
             font-size: 16px;
         }
-        .dnd{
+
+        .dnd {
             float: none;
             text-align: center;
             margin-bottom: 20px;
