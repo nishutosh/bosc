@@ -3,7 +3,9 @@ body {
     background-color: whitesmoke;
 
 }
-
+a{
+    color: orange;
+}
 .row {
     padding: 30px 50px;
 }
@@ -36,7 +38,7 @@ body {
         text-align: center;
         font-size: 43px;
         font-weight: 700;
-        margin-top: 50px;
+        margin-top: 75px;
         margin-bottom: 0px;
     }
 
@@ -58,7 +60,7 @@ body {
         width: 300px;
         margin-top: 10px;
         font-weight: 600;
-        
+
 
 
     }
@@ -87,7 +89,7 @@ body {
         }
     }
 
-    
+
 }
 
 .schedule {
@@ -182,30 +184,59 @@ body {
 
 
         }
-        .points{
+
+        .points {
             width: 49%;
             vertical-align: top;
             margin: 5px 0px;
             display: inline-block;
-            .points_list{
-                
+
+            .onthelist {
+                padding: 20px 0px;
+                width: 100%;
+                font-size: 25px;
+                font-weight: 700;
+                text-align: center;
+                color: black;
+
+                ul {
+                    list-style: none;
+                    padding: 0px;
+
+                    li {
+                        color: #333;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                        letter-spacing: 3px;
+                    }
+                }
+            }
+
+            .points_list {
+
                 list-style: none;
                 padding: 0px;
-                li{
+
+                li {
                     margin: 30px 20px;
                     font-size: 23px;
+
+                    sup {
+                        color: orange;
+                    }
                 }
             }
         }
 
     }
+
     .dnd {
-       
-      
+
         color: #a5a5a5;
-    font-size: 17px;
-    text-align: center;
-    margin-top: 50px;
+        font-size: 17px;
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 20px;
 
         p {
             margin: 5px;
@@ -215,7 +246,11 @@ body {
 
 @media only screen and (max-width: 1000px) {
     .row {
-        padding: 30px 40px;
+        padding: 20px;
+    }
+
+    body {
+        background-color: white;
     }
 
     .main {
@@ -224,9 +259,10 @@ body {
         min-height: 100vh;
 
         .logo {
-            font-size: 16px;
+            font-size: 17px;
             display: block;
             text-align: center;
+            margin: 20px 0px 10px 0px;
         }
 
         .menu {
@@ -242,14 +278,15 @@ body {
         }
 
         .head-main {
-            font-size: 31px;
-
-            margin-top: 30px;
+            font-size: 33px;
+            text-align: left;
+            margin-top: 35px;
 
         }
 
         .head-sup {
             font-size: 16px;
+            text-align: left;
         }
 
         .dnd {
@@ -260,6 +297,53 @@ body {
 
 
 
+    }
+
+    .schedule {
+        .sch_box {
+            margin: 0px;
+            padding: 0px;
+            box-shadow: none;
+
+            .sch_head {
+                font-size: 33px;
+            }
+
+            .calendar {
+                width: 100%;
+
+                .weekdays li {
+
+                    width: 12.6%;
+
+                }
+
+                .days li {
+                    width: 12.6%;
+                }
+            }
+
+            .points {
+                width: 100%;
+                padding: 10px;
+
+                .points_list {
+                    li {
+                        margin: 30px 0px;
+                        font-size: 21px;
+
+                        sup {
+                            color: orange;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .dnd {
+        font-size: 16px;
     }
 
 }
