@@ -3,9 +3,11 @@ body {
     background-color: whitesmoke;
 
 }
-a{
+
+a {
     color: orange;
 }
+
 .row {
     padding: 30px 50px;
 }
@@ -27,10 +29,10 @@ a{
     }
 
     .logo {
-        font-size: 17px;
+        font-size: 18px;
         margin: 10px 0px;
         display: inline-block;
-        font-family: 'Quicksand', sans-serif;
+        font-family: 'Josefin Sans', sans-serif;
 
     }
 
@@ -65,17 +67,9 @@ a{
 
     }
 
-    .join:hover {}
-
-    .logo_svg {
-        height: 13px;
-        width: 13px;
-        background: url('../images/bosc_logo.svg');
-        display: inline-block;
-        margin-right: 5px;
-
+    .join:hover {
+        box-shadow:0px 0px 20px #01ffe5;
     }
-
     .menu {
         display: inline-block;
         list-style: none;
@@ -84,8 +78,11 @@ a{
         .menu-items {
             display: inline-block;
             margin: 10px;
-            font-size: 17px;
+            font-size: 16px;
             cursor: pointer;
+        }
+        .menu-items:hover{
+          text-shadow:0px 0px 20px white;
         }
     }
 
@@ -222,7 +219,7 @@ a{
                     font-size: 23px;
 
                     sup {
-                        color: orange;
+                        color: turquoise;
                     }
                 }
             }
@@ -233,7 +230,7 @@ a{
     .dnd {
 
         color: #a5a5a5;
-        font-size: 17px;
+        font-size: 16px;
         text-align: center;
         margin-top: 80px;
         margin-bottom: 20px;
@@ -332,9 +329,7 @@ a{
                         margin: 30px 0px;
                         font-size: 21px;
 
-                        sup {
-                            color: orange;
-                        }
+                        
                     }
                 }
             }
